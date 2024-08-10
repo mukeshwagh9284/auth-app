@@ -11,7 +11,7 @@ const ResetPassword = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://localhost:8080/user/reset-password/${token}`,
+        `auth-app-api-peach.vercel.app/user/reset-password/${token}`,
         { password }
       );
       setMessage(response.data.message);
