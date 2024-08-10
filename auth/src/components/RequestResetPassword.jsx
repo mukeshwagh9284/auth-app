@@ -12,7 +12,7 @@ const RequestResetPassword = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8080/user/request-reset-password",
+        "auth-app-api-peach.vercel.app/user/request-reset-password",
         { email }
       );
       setMessage(response.data.message);
