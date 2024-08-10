@@ -16,7 +16,7 @@ const Log = () => {
     setLoading(true); // Set loading to true when login starts
 
     axios
-      .post(`auth-app-api-peach.vercel.app/user/login`, {
+      .post(`https://auth-app-api-peach.vercel.app/user/login`, {
         email: email,
         password: password,
       })
