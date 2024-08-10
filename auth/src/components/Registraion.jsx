@@ -27,7 +27,7 @@ const Registraion = () => {
     setLoading(true);
 
     axios
-      .post(`http://localhost:8080/user/add`, data)
+      .post(`auth-app-api-peach.vercel.app/user/add`, data)
       .then((res) => {
         alert("ragister succsses");
         // console.log(res.data);
