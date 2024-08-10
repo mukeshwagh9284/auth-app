@@ -12,9 +12,10 @@ app.listen(PORT, () => {
 const cors = require("cors");
 const mongoose = require("mongoose");
 mongoose
-  .connect(
-    "mongodb+srv://webtesting298:sairam@cluster0.9uv48bg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-  )
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log("Successfully connected to database");
   })
