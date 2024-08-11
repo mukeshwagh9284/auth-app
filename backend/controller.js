@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const sendResetEmail = (email, token) => {
-  const resetLink = `http://localhost:3000/reset-password/${token}`;
+  const resetLink = `https://auth-app-ui-murex.vercel.app/reset-password/${token}`;
 
   const mailOptions = {
     from: process.env.EMAIL,
