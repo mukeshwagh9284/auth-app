@@ -81,9 +81,9 @@ const App = () => {
         <Route
           path="/reset-password/:token"
           element={
-            <PrivateRoute>
+           
               <ResetPassword />
-            </PrivateRoute>
+           
           }
         />
         <Route path="/" element={<Navigate to="/login" />} />
